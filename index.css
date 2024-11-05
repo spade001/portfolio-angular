@@ -1,0 +1,73 @@
+/* progress bar start */
+.circle {
+    width: 200px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .circle canvas {
+    vertical-align: top;
+    width: 200px !important;
+  }
+  
+  .circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+  }
+  
+  .circle span {
+    display: block;
+    color: #ffffff;
+    margin-top: 12px;
+  }
+/* progress bar end */
+
+.progress-outer{
+  border-radius: 50px;
+  padding: 25px;
+  margin: 10px 0;
+}
+.progress{
+  height: 27px;
+  margin: 0;
+  overflow: visible;
+  border-radius: 50px;
+  background: #eaedf3;
+  box-shadow: inset 0 10px  10px rgba(244, 245, 250,0.9);
+}
+.progress .progress-bar{
+  border-radius: 50px;
+}
+.progress .progress-value{
+  position: relative;
+  left: -45px;
+  top: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.progress-bar.active{
+  animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+}
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive {
+  0% { width: 0%; }
+}
